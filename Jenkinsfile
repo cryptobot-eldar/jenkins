@@ -11,7 +11,7 @@ pipeline {
      //               def app
      //               
      //               echo 'Building image...'
-     //               app = docker.build("labapp2/test1")
+     //               app = docker.build("egaraev/trading:${env.BUILD_NUMBER}")
                     
      //               echo 'Testing image...'
      //               app.inside {
@@ -19,7 +19,7 @@ pipeline {
      //               }
                     
      //               echo 'Pushing Image...'
-     //               docker.withRegistry('http://sl-mil01-lab-registry.int.grav.com:5000') {
+     //               docker.withRegistry() {
      //                   app.push("${env.BUILD_NUMBER}")
      //                   //app.push("latest")
      //               }
